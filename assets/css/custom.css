@@ -77,3 +77,10 @@ body {
   tr:nth-child(even) {
     background-color: #dddddd;
   }
+  .del-btn{
+    background-color: rgb(170, 73, 73);
+    color: white;
+    padding: 2% 5%;
+    cursor: pointer;
+    
+  }

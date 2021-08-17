@@ -12,13 +12,17 @@
             <tr>
               <th>Name</th>
               <th>Mail</th>
+              <th>Phone No</th>
               <th>Password</th>
+              <th>Action</th>
             </tr>
             <% for(let d  of Data) {  %>
                 <tr>
                     <td><%= d.name %></td>
                     <td><%= d.mail %></td>
+                    <td><%= d.phone %></td>
                     <td><%= d.password %></td>
+                    <td><a href="/delete-data/?id=<%= d.phone %>"><button class="del-btn">Delete</button></a></td>
                 </tr>
             <% } %>
           </table>
