@@ -1,6 +1,5 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
   }
   
   * {
@@ -64,8 +63,8 @@ body {
   table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
-    background-color: #04AA6D;
+    width: 50%;
+    background-color: #bec485;
   }
   
   td, th {
@@ -73,9 +72,11 @@ body {
     text-align: left;
     padding: 8px;
   }
-  
+  th{
+    background-color: tomato;
+  }
   tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #719c8f;
   }
   .del-btn{
     background-color: rgb(170, 73, 73);
@@ -83,4 +84,10 @@ body {
     padding: 2% 5%;
     cursor: pointer;
     
+  }
+  .content {
+     width: 50%;
+    margin: auto;
+    background: white;
+    padding: 10px;
   }
