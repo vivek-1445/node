@@ -1,6 +1,26 @@
 <html>
-    <head><title>Profile</title></head>
+    <head>
+        <title><%= title %></title>
+        <link rel="stylesheet" href="/css/custom.css">
+    </head>
+
     <body>
-        <%= content %>
+        <a href="/">
+            <button type="submit" class="registerbtn" style="width: 10%;">Add Data</button>
+        </a>
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Mail</th>
+              <th>Password</th>
+            </tr>
+            <% for(let d  of Data) {  %>
+                <tr>
+                    <td><%= d.name %></td>
+                    <td><%= d.mail %></td>
+                    <td><%= d.password %></td>
+                </tr>
+            <% } %>
+          </table>
     </body>
 </html>
