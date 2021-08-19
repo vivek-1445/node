@@ -10,19 +10,20 @@
             <a href="/view-data">
                 <button type="submit" class="registerbtn" style="width: 20%;">View Data</button>
             </a>
-            <form method="post" action="/create-contact">
+            <form method="post" action="/edit-contact">
                 <div class="container">
                     <h1>Register</h1>
                     <p>Please fill in this form to create an account.</p>
                     <hr>
+                    <input type="hidden" name="data_id" value="<%= Data.id %>">
                     <label for="name"><b>Name</b></label>
-                    <input type="text" placeholder="Enter Name" name="name" id="name" required>
+                    <input type="text" placeholder="Enter Name" name="name" id="name" required value="<%= Data.name %>">
                     <label for="mail"><b>Email</b></label>
-                    <input type="text" placeholder="Enter Email" name="mail" id="mail" required>
+                    <input type="text" placeholder="Enter Email" name="mail" id="mail" required value="<%= Data.mail %>">
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" id="password" required>
+                    <input type="password" placeholder="Enter Password" name="password" id="password" required value="<%= Data.password %>">
                     <label for="phn"><b>Phone No.</b></label>
-                    <input type="text" placeholder="Enter Phone No" name="phone" id="phn" required>
+                    <input type="text" placeholder="Enter Phone No" name="phone" id="phn" required value="<%= Data.phone %>">
                      
                     <hr>
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
